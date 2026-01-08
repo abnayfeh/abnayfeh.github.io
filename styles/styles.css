@@ -46,7 +46,8 @@ html {
 
 p {
   color: rgb(85, 85, 85);
-  font-size: 1.25rem;
+  font-size: 1.1rem; /* was 1.25rem (slightly smaller so it doesn't feel massive) */
+  line-height: 1.6;
 }
 
 /* TRANSITION */
@@ -132,11 +133,13 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  /* key change: stop forcing massive empty space */
+  padding-top: 3rem;         /* was 4vh */
+  padding-bottom: 3rem;
+  height: auto;              /* was 96vh */
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  min-height: unset;         /* was fit-content */
 }
 
 .section-container {
@@ -148,13 +151,16 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 10rem;
-  height: 60vh;
+  gap: 4rem;                 /* was 10rem */
+  height: auto;              /* was 60vh */
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .profile-description {
   padding: 1rem;
   margin: 1rem;
+  max-width: 60ch;           /* makes paragraph easier to read */
 }
 
 .section__pic-container {
@@ -175,16 +181,18 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  margin-bottom: 0.25rem;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;         /* was 1.75rem */
   margin-bottom: 1rem;
 }
 
 .title {
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 #socials-container {
@@ -256,9 +264,9 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  gap: 1.5rem;               /* was 2rem */
+  margin-bottom: 1.25rem;    /* was 2rem */
+  margin-top: 1.25rem;       /* was 2rem */
 }
 
 .about-details-container {
@@ -311,7 +319,7 @@ section {
 .skills-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2.25rem; /* was 2.5rem */
   margin-bottom: 0.5rem;
 }
 
@@ -356,7 +364,7 @@ article .icon {
 .project-img {
   border-radius: 2rem;
   width: 100%; 
-  height: 350px; 
+  height: 320px; /* was 350px (slightly tighter) */
   object-fit: cover; 
   margin-bottom: 1rem;
 }
@@ -369,6 +377,7 @@ article .icon {
 .project-desc {
   font-size: 1rem;
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .project-btn {
@@ -382,7 +391,9 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 35rem;
+  margin-top: 0;              /* was 35rem (major gap culprit) */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .contact-info-upper-container {
@@ -420,7 +431,7 @@ article .icon {
 
 footer {
   height: auto;
-
+  padding: 1.5rem 0;
 }
 
 footer p {
@@ -431,8 +442,8 @@ footer p {
 /*------------ MEDIA QUERIES ------------*/
 @media screen and (max-width: 1400px) {
     #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
+      height: auto;
+      margin-bottom: 2rem;  /* was 6rem */
     }
     .about-containers {
       flex-wrap: wrap;
@@ -467,6 +478,8 @@ footer p {
     }
     section {
       margin: 0 5%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
     .section__pic-container {
       width: 275px;
@@ -481,10 +494,10 @@ footer p {
   @media screen and (max-width: 600px) {
     #contact,
     footer {
-      height: 50vh;
+      height: auto; /* was 50vh */
     }
     #profile {
-      height: 65vh;
+      height: auto;
       margin-bottom: 0;
     }
     article {
@@ -498,7 +511,7 @@ footer p {
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 1.25rem; /* was 2rem */
     }
     .contact-info-container {
       margin: 0;
@@ -533,4 +546,3 @@ footer p {
       text-align: justify;
     }
   }
-  
