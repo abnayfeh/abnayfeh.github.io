@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Abdo Nayfeh</title>
-    <script src="https://kit.fontawesome.com/1110345c41.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:400,700|Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/styles.css"> 
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Abdo Nayfeh | Data Analyst Portfolio</title>
+    <meta
+      name="description"
+      content="Abdo Nayfeh — Data Analyst portfolio featuring Tableau dashboards, customer analytics, churn & retention, SQL, Python, and data visualization."
+    />
+
+    <script src="https://kit.fontawesome.com/1110345c41.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+
+  <body>
     <nav id="desktop-nav">
       <div>
         <ul class="nav-links">
@@ -20,12 +30,14 @@
       </div>
     </nav>
 
+    <!-- HERO / PROFILE -->
     <section id="profile">
       <div class="section__text">
         <p class="section__text__p1">Hi, I'm</p>
         <h1 class="title">Abdo Nayfeh</h1>
 
-        <p class="section__text__p2">An aspiring Data Analyst</p>
+        <p class="section__text__p2">Data Analyst</p>
+
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -33,52 +45,65 @@
           >
             Download Resume
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
+          <button class="btn btn-color-1" onclick="location.href='./#projects'">
+            View Projects
           </button>
         </div>
+
         <div id="socials-container">
           <img
-            src="/styles//assets/github.png"
+            src="/styles/assets/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/abnayfeh'"
           />
           <img
-          src="/styles/assets/linkedin.png"
-          alt="My LinkedIn profile"
-          class="icon"
-          onclick="location.href='https://www.linkedin.com/in/abdo-nayfeh-b6574b5a/'"
-        />
+            src="/styles/assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/abdo-nayfeh-b6574b5a/'"
+          />
+          <img
+            src="/styles/assets/email.png"
+            alt="Email me"
+            class="icon"
+            onclick="location.href='mailto:abnayfeh@uwaterloo.ca'"
+          />
         </div>
 
-        <p class="profile-description">Recent BMath graduate skilled in data cleaning, modeling and visualization. Passionate about turning
-complex data into actionable business insights to support data-driven decision-making.</p>
+        <p class="profile-description">
+          Recent BMath graduate focused on analytics and decision support.
+          Comfortable turning messy transactional data into clean datasets, clear KPIs, and executive-style
+          dashboards (SQL, Python, Tableau).
+        </p>
       </div>
     </section>
-    
+
+    <!-- PROJECTS -->
     <section id="projects">
-
       <p class="section__text__p1">Browse My Recent</p>
-
       <h1 class="title">Projects</h1>
 
       <div class="skills-details-container">
-
         <div class="about-containers">
-
+          <!-- Project 1 -->
           <div class="details-container color-container">
-            <h2 class="skills-sub-title project-title">Ecommerce Customer Insights</h2>
+            <h2 class="skills-sub-title project-title">E-Commerce Customer & Operations Insights (Olist)</h2>
+
             <div class="article-container">
               <img
-                src="/styles/assets/project-1.png"
-                alt="Project 1"
+                src="/styles/assets/olist.png"
+                alt="Olist Ecommerce Dashboard"
                 class="project-img"
               />
             </div>
-            <p class="project-desc"> This project analyzes customer behavior, revenue performance, and operational efficiency using transactional e-commerce data from the Olist marketplace. The objective was to move beyond static reporting and develop an interactive Tableau dashboard that supports business decision-making across growth, retention, and operations.
 
-</p>
+            <p class="project-desc">
+              Built an interactive Tableau dashboard analyzing revenue growth, customer behavior, delivery performance,
+              and category efficiency. Includes executive KPIs, monthly trends, RFM segmentation, and operational insights
+              to support data-driven decisions.
+            </p>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -88,24 +113,30 @@ complex data into actionable business insights to support data-driven decision-m
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/abnayfeh'" 
+                onclick="location.href='https://public.tableau.com/app/profile/abdo.nayfeh/viz/OlistEcommerce_17664395225210/CustomerSegmentationDashboard'"
               >
                 Live Demo
               </button>
             </div>
           </div>
 
+          <!-- Project 2 -->
           <div class="details-container color-container">
-            <h2 class="skills-sub-title project-title">Customer Retention & Churn Analysis – Online Retail II</h2>
+            <h2 class="skills-sub-title project-title">Customer Retention & Churn Analysis (Online Retail II)</h2>
+
             <div class="article-container">
               <img
-                src="/styles/assets/project-2.png"
-                alt="Project 2"
+                src="/styles/assets/churn.png"
+                alt="Customer Retention & Churn Project"
                 class="project-img"
               />
             </div>
-            <p class="project-desc"> This project analyzes customer churn, retention, and revenue dynamics using transactional e-commerce data from the Online Retail II dataset.
-The goal is to understand how customer retention evolves over time, how it differs from revenue retention, and where churn risk is highest in the customer lifecycle.</p>
+
+            <p class="project-desc">
+              Engineered customer-level churn labels and cohort retention metrics from transactional data.
+              Analyzed retention and revenue dynamics over time, surfacing where churn risk concentrates across the customer lifecycle.
+            </p>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -115,126 +146,84 @@ The goal is to understand how customer retention evolves over time, how it diffe
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/abnayfeh'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-
-
-
         </div>
       </div>
+    </section>
 
+    <!-- SKILLS -->
+    <section id="skills">
+      <h1 class="title">Skills</h1>
 
-
-      <section id="skills">
-        <h1 class="title">Skills</h1>
-        <div class="skills-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="skills-sub-title">Languages</h2>
-              <br>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="/styles/assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML/CSS</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="/styles/assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                  </div>
-                </article>
-
-                <article>
-                  <img
-                    src="/styles/assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>C/C++</h3>
-                  </div>
-              </div>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Analytics</h2>
+            <br />
+            <div class="article-container">
+              <article>
+                <img src="/styles/assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>SQL (joins, CTEs, window funcs)</h3></div>
+              </article>
+              <article>
+                <img src="/styles/assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Python (pandas)</h3></div>
+              </article>
+              <article>
+                <img src="/styles/assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Tableau (dashboards, LODs)</h3></div>
+              </article>
+              <article>
+                <img src="/styles/assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Excel (pivoting, analysis)</h3></div>
+              </article>
+              <article>
+                <img src="/styles/assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Data Modeling & KPI Design</h3></div>
+              </article>
             </div>
+          </div>
 
-            <div class="details-container">
-              <h2 class="skills-sub-title">Tools & Technologies</h2>
-              <br>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="/styles/assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>React</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="/styles/assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Node.js</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="/styles/assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Firebase</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="/styles/assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="/styles/assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Bash</h3>
-                  </div>
-                </article>
-              </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Tools</h2>
+            <br />
+            <div class="article-container">
+              <article>
+                <img src="/styles/assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Git / GitHub</h3></div>
+              </article>
+              <article>
+                <img src="/styles/assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>SQLite</h3></div>
+              </article>
+              <article>
+                <img src="/styles/assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Power BI (learning)</h3></div>
+              </article>
+              <article>
+                <img src="/styles/assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Data Cleaning</h3></div>
+              </article>
+              <article>
+                <img src="/styles/assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Business Storytelling</h3></div>
+              </article>
             </div>
           </div>
         </div>
-
-      </section>
-
+      </div>
     </section>
+
+    <!-- CONTACT -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -244,13 +233,31 @@ The goal is to understand how customer retention evolves over time, how it diffe
           />
           <p><a href="mailto:abnayfeh@uwaterloo.ca">abnayfeh@uwaterloo.ca</a></p>
         </div>
+
         <div class="contact-info-container">
           <img
             src="/styles/assets/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/abdo-nayfeh-b6574b5a/">LinkedIn</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/abdo-nayfeh-b6574b5a/" target="_blank" rel="noreferrer"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="/styles/assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://github.com/abnayfeh" target="_blank" rel="noreferrer"
+              >GitHub</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -265,6 +272,7 @@ The goal is to understand how customer retention evolves over time, how it diffe
           </ul>
         </div>
       </nav>
+      <p></p>
     </footer>
 
     <script src="script.js"></script>
