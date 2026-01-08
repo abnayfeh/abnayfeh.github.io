@@ -175,6 +175,13 @@ section {
   text-align: center;
 }
 
+.dashboard-img {
+  height: auto;
+  object-fit: contain;
+  max-height: 450px;
+}
+
+
 .section__text p {
   font-weight: 600;
 }
