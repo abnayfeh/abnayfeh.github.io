@@ -31,53 +31,64 @@
     </nav>
 
     <!-- HERO / PROFILE -->
-    <section id="profile">
-      <div class="section__text">
-        <p class="section__text__p1">Hi, I'm</p>
-        <h1 class="title">Abdo Nayfeh</h1>
+<section id="profile">
+  <!-- LEFT: IMAGE -->
+  <div class="section__pic-container">
+    <img
+      src="/styles/assets/profile.jpg"
+      alt="Abdo Nayfeh"
+      class="hero-pic-oval"
+    />
+  </div>
 
-        <p class="section__text__p2">Data Analyst</p>
+  <!-- RIGHT: TEXT (unchanged content) -->
+  <div class="section__text">
+    <p class="section__text__p1">Hi, I'm</p>
+    <h1 class="title">Abdo Nayfeh</h1>
 
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('/styles/assets/Abdo_Nayfeh_Data_Analyst_UI.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#projects'">
-            View Projects
-          </button>
-        </div>
+    <p class="section__text__p2">Data Analyst</p>
 
-        <div id="socials-container">
-          <img
-            src="/styles/assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/abnayfeh'"
-          />
-          <img
-            src="/styles/assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/abdo-nayfeh-b6574b5a/'"
-          />
-          <img
-            src="/styles/assets/email.png"
-            alt="Email me"
-            class="icon"
-            onclick="location.href='mailto:abnayfeh@uwaterloo.ca'"
-          />
-        </div>
+    <div class="btn-container">
+      <button
+        class="btn btn-color-2"
+        onclick="window.open('/styles/assets/Abdo_Nayfeh_Data_Analyst_UI.pdf')"
+      >
+        Download Resume
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='./#projects'">
+        View Projects
+      </button>
+    </div>
 
-        <p class="profile-description">
-          Recent BMath graduate focused on analytics and decision support.
-          Comfortable turning messy transactional data into clean datasets, clear KPIs, and executive-style
-          dashboards (SQL, Python, Tableau).
-        </p>
-      </div>
-    </section>
+    <div id="socials-container">
+      <img
+        src="/styles/assets/github.png"
+        alt="My Github profile"
+        class="icon"
+        onclick="location.href='https://github.com/abnayfeh'"
+      />
+      <img
+        src="/styles/assets/linkedin.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="location.href='https://www.linkedin.com/in/abdo-nayfeh-b6574b5a/'"
+      />
+      <img
+        src="/styles/assets/email.png"
+        alt="Email me"
+        class="icon"
+        onclick="location.href='mailto:abnayfeh@uwaterloo.ca'"
+      />
+    </div>
+
+    <p class="profile-description">
+      Recent BMath graduate focused on analytics and decision support.
+      Comfortable turning messy transactional data into clean datasets, clear KPIs, and executive-style
+      dashboards (SQL, Python, Tableau).
+    </p>
+  </div>
+</section>
+
 
     <!-- PROJECTS -->
     <section id="projects">
