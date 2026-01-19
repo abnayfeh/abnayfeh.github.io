@@ -133,13 +133,13 @@ a:hover {
 /* SECTIONS */
 
 section {
-  /* key change: stop forcing massive empty space */
-  padding-top: 3rem;         /* was 4vh */
+
+  padding-top: 3rem;        
   padding-bottom: 3rem;
-  height: auto;              /* was 96vh */
+  height: auto;             
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: unset;         /* was fit-content */
+  min-height: unset;         
 }
 
 .section-container {
@@ -151,8 +151,8 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 4rem;                 /* was 10rem */
-  height: auto;              /* was 60vh */
+  gap: 6rem;                
+  height: 75vh;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -160,7 +160,7 @@ section {
 .profile-description {
   padding: 1rem;
   margin: 1rem;
-  max-width: 60ch;           /* makes paragraph easier to read */
+  max-width: 150ch;
 }
 
 .section__pic-container {
@@ -193,7 +193,7 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 1.5rem;         /* was 1.75rem */
+  font-size: 1.75rem;     
   margin-bottom: 1rem;
 }
 
@@ -216,16 +216,20 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 1rem;
   gap: 1rem;
 }
+
 
 /* ICONS */
 
 .icon {
   cursor: pointer;
   height: 2rem;
+  display: block; 
 }
+
 
 /* BUTTONS */
 
@@ -282,9 +286,9 @@ section {
 }
 
 .about-containers {
-  gap: 1.5rem;               /* was 2rem */
-  margin-bottom: 1.25rem;    /* was 2rem */
-  margin-top: 1.25rem;       /* was 2rem */
+  gap: 1.5rem;              
+  margin-bottom: 1.25rem;  
+  margin-top: 1.25rem;     
 }
 
 .about-details-container {
@@ -338,7 +342,7 @@ section {
 .skills-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 2.25rem; /* was 2.5rem */
+  font-size: 2.25rem;
   margin-bottom: 0.5rem;
 }
 
@@ -382,9 +386,9 @@ article .icon {
 
 .project-img {
   width: 100%;
-  height: auto;          /* let image keep its aspect ratio */
-  max-height: 420px;     /* prevents it from being too tall */
-  object-fit: contain;   /* show the whole image, no cropping */
+  height: auto;       
+  max-height: 420px;    
+  object-fit: contain; 
   background-color: #fff;
   margin-bottom: 1rem;
 }
@@ -412,7 +416,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 0;              /* was 35rem (major gap culprit) */
+  margin-top: 0; 
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -444,6 +448,11 @@ article .icon {
   cursor: default;
 }
 
+.email-icon-hero {
+  height: 2.5rem;
+}
+
+
 .email-icon {
   height: 2.5rem;
 }
@@ -466,7 +475,7 @@ footer p {
     #profile {
     display: flex;
     justify-content: center;
-    gap: 2.5rem;   /* was 4rem */
+    gap: 2.5rem; 
     height: auto;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -521,7 +530,7 @@ footer p {
   @media screen and (max-width: 600px) {
     #contact,
     footer {
-      height: auto; /* was 50vh */
+      height: auto; 
     }
     #profile {
       height: auto;
@@ -538,7 +547,7 @@ footer p {
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
-      gap: 1.25rem; /* was 2rem */
+      gap: 1.25rem;
     }
     .contact-info-container {
       margin: 0;
