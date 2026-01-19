@@ -573,3 +573,23 @@ footer p {
       text-align: justify;
     }
   }
+
+  #profile {
+    gap: 1.5rem; 
+  }
+  
+  .section__pic-container {
+    width: 100%;
+    height: auto;             
+    margin: 0 auto 1rem;
+  }
+  
+  .hero-pic-oval {
+    width: 70vw;             
+    max-width: 320px;          
+    height: auto;               
+    aspect-ratio: 360 / 440;   
+    border-radius: 50% / 40%;
+    object-fit: cover;
+  }
+
