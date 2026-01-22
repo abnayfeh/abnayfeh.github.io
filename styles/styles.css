@@ -142,6 +142,7 @@ section {
   min-height: unset;         
 }
 
+
 .section-container {
   display: flex;
 }
@@ -157,11 +158,56 @@ section {
   padding-bottom: 2.5rem;
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: transparent; /* important */
+}
+
+/* Fixed full-page background layer */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  /* Base gradient */
+  background: linear-gradient(
+    135deg,
+    #0f172a,   /* dark navy */
+    #1f2933,   /* charcoal */
+    #020617    /* near black */
+  );
+
+  /* Optional subtle noise texture */
+  background-image:
+    linear-gradient(135deg, #0f172a, #1f2933, #020617),
+    url("noise.png");  /* tiny 200x200 transparent noise png */
+
+  background-size: cover, 200px 200px;
+  background-repeat: no-repeat, repeat;
+}
+
+
+
 .profile-description {
   padding: 1rem;
   margin: 1rem;
   max-width: 150ch;
 }
+
+
+section, .container, .projects, .hero {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
 
 .section__pic-container {
   display: flex;
